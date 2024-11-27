@@ -84,7 +84,7 @@
             {
                 owner: tx-sender,
                 creator: tx-sender,
-                metadata-url: metadata-url,
+                metadata-url: (unwrap-panic (as-max-len? metadata-url u256)),
                 creation-time: block-height,
                 current-stage: u0,
                 is-public: is-public,
@@ -125,7 +125,7 @@
             {
                 owner: tx-sender,
                 creator: tx-sender,
-                metadata-url: metadata-url,
+                metadata-url: (unwrap-panic (as-max-len? metadata-url u256)),
                 creation-time: block-height,
                 current-stage: u0,
                 is-public: is-public,
